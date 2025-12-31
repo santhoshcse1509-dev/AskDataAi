@@ -1,0 +1,5 @@
+{
+  "name": "AskData AI",
+  "description": "A micro-SaaS that allows users to query CSV and Excel files using natural language. Built with React, Tailwind, and Gemini AI.",
+  "requestFramePermissions": []
+}
