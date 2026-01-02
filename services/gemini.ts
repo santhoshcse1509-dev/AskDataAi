@@ -39,9 +39,9 @@ export class GeminiService {
     `;
 
     try {
-      // Use gemini-3-pro-preview for complex reasoning tasks like SQL generation
-      const response = await this.ai.models.generateContent({
-        model: "gemini-3-pro-preview",
+      // Use gemini-1.5-flash for fast and reliable content generation
+      const response = await (this.ai as any).models.generateContent({
+        model: "gemini-1.5-flash",
         contents: prompt,
         config: {
           systemInstruction,

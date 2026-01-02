@@ -1,8 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
-import { GeminiService } from '../services/gemini.ts';
-import { DataService } from '../services/db.ts';
-import { TableData, QueryResult } from '../types.ts';
+import { GeminiService } from '../services/gemini';
+import { DataService } from '../services/db';
+import { TableData, QueryResult } from '../types';
 
 interface Props {
   tableData: TableData;
