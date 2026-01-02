@@ -7,14 +7,10 @@ export default defineConfig(({ mode }) => {
     return {
       base: './', // Makes deployment to sub-paths (like GitHub Pages) and Vercel work seamlessly
       server: {
-        port: 3000,
+        port: 3001,
         host: '0.0.0.0',
       },
       plugins: [react()],
-      define: {
-        'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-        'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
-      },
       resolve: {
         alias: {
           '@': path.resolve(__dirname, '.'),

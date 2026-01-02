@@ -3,8 +3,8 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { AIResponse, ColumnMetadata } from "../types";
 
 export class GeminiService {
-  // Initialize AI client using the provided environment variable exactly as specified in guidelines
-  private static ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  // Initialize AI client using the Vite environment variable
+  private static ai = new GoogleGenAI({ apiKey: (import.meta as any).env.VITE_GEMINI_API_KEY });
 
   static async generateSQL(
     prompt: string,
